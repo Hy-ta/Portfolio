@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+body{
+  font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
+}
+
 .no-js .back-to-top {
   display: none;
 }

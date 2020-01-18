@@ -4,9 +4,87 @@ body{
   font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
 }
 
-.no-js .back-to-top {
+/* ----------------------------
+animation
+------------------------------- */
+.mask {
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height : 100%;
+}
+
+.mask img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left: -960px;
+  margin-top: -540px;
+  width: 1920px;
+  height : 1080px;
+}
+
+.mask .bar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+}
+.mask#apple-1 .bar { background-color: #ff0000; }
+.mask#apple-2 .bar { background-color: #11379d; }
+.mask#apple-3 .bar { background-color: #9a03d9; }
+.mask#apple-4 .bar { background-color: #3cb932; }
+
+.mask .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+  top: 0;
+}
+.mask:first-child .line {
   display: none;
 }
+/* --------------------------
+About
+-----------------------------*/
+.about {
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  margin: 30px 0 15px;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+.heading::before{
+  bottom: 5px;
+}
+
+.aboutLogo {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+} 
+
+/* -------------------------
+Skills
+----------------------------*/
 .skills-heading {
   position: relative;
   letter-spacing: 2px;

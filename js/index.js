@@ -1,41 +1,3 @@
-// $(function () {
-//     imagesProgress();
-//     function imagesProgress() {
-//         var   $container    = $('#progress'),
-//               $progressBar  = $container.find('.progress-bar'),
-//               $progressText = $container.find('.progress-text'),
-//               imgLoad       = imagesLoaded('body'),
-//               imgTotal      = imgLoad.images.length,
-//               imgLoaded     = 0,
-//               current       = 0,
-//               progressTimer = setInterval(updateProgress, 1000 / 60);
-//               imgLoad.on('progress', function () {
-//                   imgLoaded++;
-//               });
-//               function updateProgress () {
-//                   var target = (imgLoaded / imgTotal) * 100;
-//                   current += (target - current) * 0.1;
-
-//                   $progressBar.css({ width: current + '%' });
-//                   $progressText.text(Math.floor(current) + '%');
-//                   if (current >= 100){
-//                       clearInterval(progressTimer)
-//                       $container.addClass('progress-complete');
-//                       $progressBar.add($progressText)
-//                       .delay(500)
-//                       .animate({ opacity: 0 }, 250, function () {
-//                           $container.animate({
-//                               top: '-100%'
-//                           }, 1000, 'easeInOutQuint');
-//                       });
-//                   }
-//                   if (current > 99.9) {
-//                       current = 100;
-//                   }
-//               }
-//          }
-// });
-
 $(function () {
     initScene3();
     // scene mask animation
@@ -114,20 +76,23 @@ $(function () {
 });
 
                   // btn animation // 
-$(function(){
-    var duration = 300;
-    $('#buttons01').on('mouseover',function(){
-        $(this).stop(true).animate({
-            backgroundColor: '#ae5e9b',
-            color: '#fff'
-        },
-        duration);
-    })
-    .on('mouseout', function(){
-        $(this).stop(true).animate({
-            backgroundColor: '#fff',
-            color: 'ebc000'
-        }, 
-        duration);
-    });
-});
+                //   $(function(){
+                //     // 
+                //     var duration = 300;
+                
+                //     // buttons1 ----------------------------------------
+                //     // buttons1  1行目
+                //     $('#buttons1 button:nth-child(-n+4)')
+                //         .on('mouseover', function() {
+                //             $(this).stop(true).animate({
+                //                 backgroundColor: '#ae5e9b',
+                //                 color: '#fff'
+                //             }, duration);
+                //         })
+                //         .on('mouseout', function(){
+                //             $(this).stop(true).animate({
+                //                 backgroundColor: '#fff',
+                //                 color: '#ebc000'
+                //             }, duration);
+                //         });
+                

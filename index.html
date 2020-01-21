@@ -12,7 +12,7 @@
     </head>
     <body>
         <!-- nav -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark shadow sticky-top">
           <div class="container">
             <a class="navbar-brand shadow" href="#"><i class="fas fa-briefcase"></i><span class="ml-2">Portfolio</span></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggple navigation">
@@ -24,7 +24,7 @@
                       <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                   </ul>
                 </div>
@@ -33,41 +33,39 @@
         <!-- /nav bar -->
 
         <!-- animation -->
-          <div class="py-4">
-            <div class="container">
-              <div class="scene" id="scene-3">
-                    <div class="mask" id="apple-1">
-                        <img src="./img/nz.jpeg" alt="slide">
+       
+          　　<div class="scene" id="scene-3">
+                    <div class="mask" id="slide-1">
+                        <img src="./img/slides-img1.jpeg" alt="slide">
                         <div class="bar"></div>
                         <div class="line"></div>
                     </div>
-                    <div class="mask" id="apple-2">
-                        <img src="./img/user.top.jpeg" alt="slide">
+                    <div class="mask" id="slide-2">
+                        <img src="./img/slides-img2.jpeg" alt="slide">
                         <div class="bar"></div>
                         <div class="line"></div>
                     </div>
-                    <div class="mask" id="apple-3">
-                        <img src="./img/logo1.png" alt="slide">
+                    <div class="mask" id="slide-3">
+                        <img src="./img/slides-img3.jpeg" alt="slide">
                         <div class="bar"></div>
                         <div class="line"></div>
                     </div>
-                    <div class="mask" id="apple-4">
-                        <img src="./img/nz4.jpg" alt="slide">
+                    <div class="mask" id="slide-4">
+                        <img src="./img/slides-img4.jpeg" alt="slide">
                         <div class="bar"></div>
                         <div class="line"></div>
                     </div>
               </div>
-            </div>
-          </div>
+        
         <!-- /animation -->
 
         <!-- About -->  
-        <div class="py-4 about" id="about">
+        <div class="about bg-white" id="about">
           <div class="container">
             <h2 class="text-center display-3 heading">About Me</h2>
-              <div class="row mt-2">
-                <img src="./img/nz.jpeg" class="col-md-4 aboutLogo" alt="logo">
-                <p class="col-md-6 mt-5">2019年3月からプログラミング学習を開始。<br>HTML／CSS, JS, jQuery, Ruby, Ruby on Railsなどを学習。<br>
+              <div class="row mt-2 align-items-center">
+                <img src="./img/nz.jpeg" class="col-md-4 col-6 aboutLogo" style="height: auto;" alt="logo">
+                <p class="col-md-6 text-center">2019年3月からプログラミング学習を開始。<br>HTML／CSS, JS, jQuery, Ruby, Ruby on Railsなどを学習。<br>
                     その後Portfolioサイト２つとWeb Applicationを２つ制作しました。<br>
                     エクササイズが趣味の一つでニュージーランドに住んでいた時は<br>
                     キックボクシングを7ヶ月程してました。</p>
@@ -77,7 +75,7 @@
       <!-- /About -->
         
     　<!-- Skills　 -->
-      <div class="py-4 bg-dark text-white">
+      <div class="py-4 text-white" id="skills">
         <div class="container">
           <h2 class="mb-4 text-center display-3 skills-heading">My Skills</h2>
             <div class="row py-4">
@@ -85,7 +83,7 @@
                 <div class="col-md-3 ml-md-auto">
                     <i class="far fa-lightbulb faa-float animated skills-icon"></i>
                     <h3>Programming</h3>
-                    <p>HTML&CSSを6ヶ月JS・jQueryを4ヶ月<br>Ruby・Ruby on Railsを４ヶ月程学習しながら<br>ポートフォリオサイト二つWeb applicationを二つ作成しました</p>
+                    <p>HTML&CSSを6ヶ月JS・jQueryを4ヶ月<br>Ruby・Ruby on Railsを４ヶ月程学習しながら<br>ポートフォリオサイト二つとWeb applicationを二つ作成しました</p>
                 </div>
                 <div class="col-md-3 ml-md-auto">
                     <i class="fas fa-globe-americas faa-float animated skills-icon"></i>
@@ -104,7 +102,7 @@
           <!-- /Skills -->
                   
             <!-- Portfolio section -->
-        <div class="py-4">
+        <div class="py-4" id="portfolio">
           <div class="container" id="buttons1">
             <h2 class="mb-4 text-center display-3 heading">Portfolio</h2>
                     <!-- card -->
@@ -115,7 +113,7 @@
                           <img class="card-img-top img-fluid" src="./img/logo1.png" alt="card1">
                             <div class="card-body d-flex justify-content-between">
                                 <h4 class="card-title text-secondary">Suggest</h4>
-                                <button type="button" class="btn inner clearfix" data-toggle="modal" data-target="#modal01">Albatross</button>
+                                <button type="button" class="btn inner clearfix" data-toggle="modal" data-target="#modal01">Check</button>
                             </div>
                          </div>
                      </div>
@@ -125,7 +123,7 @@
                             <img class="card-img-top img-fluid" src="./img/logo.png" alt="card2">
                               <div class="card-body d-flex justify-content-between">
                                  <h4 class="card-title text-secondary">Tips</h4>
-                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal02">go page</button>
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal02">Check</button>
                               </div>
                         </div>
                       </div>
@@ -135,7 +133,7 @@
                             <img class="card-img-top img-fluid" src="./img/user.top.jpeg" alt="card3">
                               <div class="card-body d-flex justify-content-between">
                                  <h4 class="card-title text-secondary">Portfolio</h4>
-                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal03">go page</button>
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal03">Check</button>
                               </div>
                         </div>
                       </div>
@@ -211,12 +209,11 @@
                     <!-- /modal 3 -->
                  </div>
              </div>
-  
         </div>
              <!-- /card -->
           <!-- /content02 -->
         <!--  footer -->
-        <footer class="py-4 bg-dark">
+        <footer class="py-4" id="footer">
           <div class="container text-center">
             <!-- nav -->
             <ul class="nav justify-content-center mb-3">
@@ -226,19 +223,13 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="signup.html">Signup</a>
-                </li>
             </ul>
           </div>
         </footer>
       <!-- /footer -->  
       <script src="./js/vendor/jquery-1.10.2.min.js"></script>
       <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-      <script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+      <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
       <script src="./js/vendor/bootstrap.bundle.min.js"></script>
       <script src="./js/index.js"></script>
     </body>

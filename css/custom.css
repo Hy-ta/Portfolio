@@ -4,6 +4,13 @@ body{
   font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
 }
 
+.sticky-top{
+  background-color: rgba(19,51,76,1);
+}
+
+.sticky-top-clone.visible{
+   top: 0;
+}
 /* ---------------------------
 progress bar
 ------------------------------*/
@@ -37,6 +44,10 @@ progress bar
 /* ----------------------------
 animation
 ------------------------------- */
+.scene{
+  height: 700px;
+  width: auto;
+}
 .mask {
   overflow: hidden;
   position: absolute;
@@ -53,7 +64,7 @@ animation
   margin-left: -960px;
   margin-top: -540px;
   width: 1920px;
-  height : 1080px;
+  height : 1280px;
 }
 
 .mask .bar {
@@ -62,10 +73,10 @@ animation
   height: 40px;
   bottom: 0;
 }
-.mask#apple-1 .bar { background-color: #ff0000; }
-.mask#apple-2 .bar { background-color: #11379d; }
-.mask#apple-3 .bar { background-color: #9a03d9; }
-.mask#apple-4 .bar { background-color: #3cb932; }
+.mask#slide-1 .bar { background-color: #13334c; }
+.mask#slide-2 .bar { background-color: #005792; }
+.mask#slide-3 .bar { background-color: #f6f6e9; }
+.mask#slide-4 .bar { background-color: #fd5f00; }
 
 .mask .line {
   position: absolute;
@@ -81,15 +92,20 @@ animation
 /* --------------------------
 About
 -----------------------------*/
-.about {
-  color: #333;
+#about{
+  background-color: rgba(246,246,233,1);
+  color:#A08FD5;
 }
 
+#portfolio{
+  background-color: #fd5f00;
+}
 .heading {
   position: relative;
-  margin: 30px 0 15px;
+  margin: 0 0 30px 15px;
   letter-spacing: 2px;
   padding-bottom: 15px;
+
 }
 
 .heading::before,
@@ -115,6 +131,9 @@ About
 /* -------------------------
 Skills
 ----------------------------*/
+#skills{
+  background-color: rgba(0,87,146,1);;
+}
 .skills-heading {
   position: relative;
   letter-spacing: 2px;
@@ -159,6 +178,7 @@ Skills
 /* ---------------
 btn animation
 ------------------*/
+
 #buttons1 button{
   display: block;
   letter-spacing: 0.15rem;
@@ -166,4 +186,11 @@ btn animation
   background-color: #ebc000;
   border: none;
   border-radius: 20px;
+}
+
+/*--------------------
+footer 
+---------------------*/
+#footer{
+  background-color: rgba(19,51,76,1);
 }

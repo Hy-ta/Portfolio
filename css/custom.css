@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-body{
+/* body{
+  font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
+} */
+html, body, .scene {
+  height: 100%;
   font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
 }
 
@@ -45,7 +49,7 @@ progress bar
 animation
 ------------------------------- */
 .scene{
-  height: 700px;
+  /* height: 100%; */
   width: auto;
 }
 .mask {
@@ -193,4 +197,11 @@ footer
 ---------------------*/
 #footer{
   background-color: rgba(19,51,76,1);
+}
+
+#footer li:hover{ 
+  opacity: 0.8;
+  background-color: #A08FD5;
+  border-radius: 30%;
+  
 }

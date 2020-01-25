@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* body{
-  font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
-} */
 html, body, .scene {
   height: 100%;
   font-family: "Hiragino Kaku Gothic Pron", Meiryo, sans-serif;
@@ -15,35 +12,6 @@ html, body, .scene {
 .sticky-top-clone.visible{
    top: 0;
 }
-/* ---------------------------
-progress bar
-------------------------------*/
-/* .progress {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.progress-bar {
-  border-top: 1px solid rgb(160, 160, 160);
-  position: absolute;
-  top: 50%;
-  width: 0%;
-}
-.progress-text {
-  font-family: "Menlo", "Consolas", "monospace";
-  font-size: 12px;
-  margin-top: 10px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-} 
-.progress-complete .progress-bar {
-  border-top-color: rgb(255, 255, 255)
-} */
-
 
 /* ----------------------------
 animation
@@ -96,6 +64,28 @@ animation
 /* --------------------------
 About
 -----------------------------*/
+.fly{
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
+}
+
+.block{
+  float: left;
+  width: 50%;
+  min-height: 200px;
+}
+
+.full-block {
+  width: 100%;
+  /* min-height: 300px;  */
+}
+
+.show-block{
+  opacity: 1;
+  transform: translateY(0) scale(1) translate3d(0, 0, 0);
+}
+
 #about{
   background-color: rgba(246,246,233,1);
   color:#A08FD5;

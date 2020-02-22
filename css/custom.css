@@ -162,6 +162,7 @@ Portfolio
   letter-spacing: 2px;
   padding-bottom: 15px;
   color: rgb(145, 37, 37);
+  
 }
 
 .heading::before,
@@ -172,6 +173,7 @@ Portfolio
   bottom: 0;
   left: 0;
   border-bottom: 1px solid rgb(145, 37, 37);
+  
 }
 
 .heading::before{
@@ -203,3 +205,4 @@ footer
   border-radius: 30%;
   
 }
+

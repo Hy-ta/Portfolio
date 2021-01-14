@@ -19,6 +19,7 @@ animation
 .scene{
   /* height: 100%; */
   width: auto;
+  height: 611px;
 }
 .mask {
   overflow: hidden;
